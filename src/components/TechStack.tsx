@@ -22,10 +22,10 @@ const technologies = [
 
 const TechStack = () => {
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
-      <div className="container mx-auto px-6">
-      <h1 className=" text-center font-bold text-3xl text-purple-600 m-5 ">Tech Stack</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <section className = "py-20 bg-gray-50 dark:bg-gray-800/50">
+      <div className = "container mx-auto px-6">
+      <h1 className = "text-5xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">TECH STACK</h1>
+        <div className=" mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {technologies.map((tech, index) => (
            <motion.div
            key={tech.name}

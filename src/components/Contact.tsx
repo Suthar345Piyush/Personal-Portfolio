@@ -11,7 +11,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800/50">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Want to Connect
+          Connect with Me
         </h2>
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">

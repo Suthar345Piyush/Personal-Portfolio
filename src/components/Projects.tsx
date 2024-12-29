@@ -1,27 +1,30 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import gifhubImage from "../assets/gifhub.png";
+import blogcraftImage from "../assets/blogcraft.png"
+import brainwaveImage from "../assets/brainwave.png";
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce platform built with React, Node.js, and MongoDB',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80',
-    github: '#',
-    live: '#'
+    title: 'GifHub',
+    description: 'A web application where you can find various gifs built with React Js , Tailwind CSS , Giphy API',
+    image:  gifhubImage,
+    github: 'https://github.com/Suthar345Piyush/GIFHub-Gifs-App',
+    live: 'https://gif-hub-gifs-app.vercel.app/'
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80',
-    github: '#',
-    live: '#'
+    title: 'BrainWave',
+    description: 'A modern SAAS app like website built with React Js , Tailwind CSS',
+    image: brainwaveImage,
+    github: 'https://github.com/Suthar345Piyush/BrainWave',
+    live: 'https://brain-wave-psi.vercel.app/'
   },
   {
-    title: 'Weather Dashboard',
-    description: 'A weather dashboard that shows forecasts using external APIs',
-    image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80',
-    github: '#',
-    live: '#'
+    title: 'BlogCraft',
+    description: 'A Whole functional backend of an blogging application built with Nodejs , Expressjs , JWT Authentication , EJS ',
+    image: blogcraftImage,
+    github: 'https://github.com/Suthar345Piyush/BlogCraft',
+    live: 'https://blog-craft.vercel.app/'
   }
 ];
 
@@ -29,10 +32,10 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Featured Projects
+        <h2 className="text-5xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+           PROJECTS
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -42,7 +45,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                 />
               </div>
               <div className="p-6">

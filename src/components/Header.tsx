@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleDark }) => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6 text-3xl">
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#about">About</NavLink>
             <NavLink href="#projects">Projects</NavLink>

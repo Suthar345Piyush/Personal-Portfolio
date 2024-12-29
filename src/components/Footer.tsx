@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col items-center space-y-6">
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Suthar345Piyush/Personal-Portfolio"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-black transition-colors"
@@ -16,7 +16,7 @@ const Footer = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/piyush-suthar-641a0826a/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-500 transition-colors"
@@ -24,7 +24,7 @@ const Footer = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/PiyushS35"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-black transition-colors"
