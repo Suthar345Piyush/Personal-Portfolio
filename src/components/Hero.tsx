@@ -34,7 +34,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-lg">
-              Passionate about projects to solve real world projects , and to create interactive webpages.
+              Passionate to build projects which solve real world problems , and to create interactive webpages.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
