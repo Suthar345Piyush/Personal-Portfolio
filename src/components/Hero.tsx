@@ -37,21 +37,15 @@ const Hero = () => {
               Passionate to build projects which solve real world problems , and to create interactive webpages.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#contact"
-                className="btn-primary group"
-              >
-                Get in Touch
-                <ArrowRight className="w-4 h-4 ml-2  group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="#projects"
-                className="btn-secondary"
-              >
-                View Projects
-              </a>
-            </div>
+            <div className="flex flex-wrap gap-4 sm:flex-row sm:gap-6 sm:justify-start flex-col items-start">
+              <button className="flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-purple-700 transition">
+                  Get in Touch
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+             </button>
+           <button className="bg-gray-800 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-900 transition">
+              View Projects
+          </button>
+         </div>
 
             <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300">
               
