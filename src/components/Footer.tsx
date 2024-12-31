@@ -38,8 +38,8 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <p className="text-gray-400">
-            Made with React and Tailwind
+          <p className="text-gray-300">
+            Made with ❤️ by Piyush
           </p>
         </div>
       </div>

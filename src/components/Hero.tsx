@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import mySelf from '../assets/mySelf.png';
+import Contact from './Contact';
+import Projects from './Projects';
 
 
 const Hero = () => {
@@ -38,13 +40,20 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 sm:flex-row sm:gap-6 sm:justify-start flex-col items-start">
-              <button className="flex items-center bg-purple-600 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-purple-700 transition">
-                  Get in Touch
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-             </button>
-           <button className="bg-gray-800 text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-900 transition">
-              View Projects
-          </button>
+            
+            <a href="#contact">
+            <button onClick={Contact} className="bg-blue-950 text-red-400 border border-purple-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+       <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+  Get in Touch
+</button>
+</a>
+
+<a href="#projects">
+<button onClick={Projects}  className="bg-blue-950 text-red-400 border border-purple-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+  <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+  View Projects
+</button>
+</a>
          </div>
 
             <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300">

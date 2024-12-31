@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleDark }) => {
           {/* Mobile menu button */}
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="lg:hidden p-2 rounded-lg  md:hidden outline-none mobile-menu-button hover:bg-gray-100 dark:hover:bg-gray-800"
           >
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -47,6 +47,12 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleDark }) => {
             <MobileNavLink href="#about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
             <MobileNavLink href="#projects" onClick={() => setIsOpen(false)}>Projects</MobileNavLink>
             <MobileNavLink href="#contact" onClick={() => setIsOpen(false)}>Contact</MobileNavLink>
+            <button
+              onClick={toggleDark}
+              className="p-2 rounded-2xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ml-4"
+            >
+              {isDark ? <Sun className="w-5 h-5 text-white" /> : <Moon className="w-5 h-5" />}
+            </button> 
           </div>
         </div>
       </nav>
